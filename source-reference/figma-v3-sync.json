@@ -1,0 +1,34 @@
+{
+  "pageName": "公会改造·V3 六天定稿",
+  "figmaUrl": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2",
+  "pageId": "226:2",
+  "sourcePagePreserved": true,
+  "inheritedBoardId": "226:3",
+  "garrison": {
+    "screenId": "226:6942",
+    "primaryTextId": "226:7049",
+    "primaryLabel": "撤回",
+    "aidTextId": "229:4",
+    "aidPlacement": "调整右侧"
+  },
+  "newModules": [
+    {
+      "module": "E",
+      "nodeId": "230:2",
+      "screensIncludingInlineDetails": 24
+    },
+    {
+      "module": "F",
+      "nodeId": "230:2122",
+      "screensIncludingInlineDetails": 11
+    },
+    {
+      "module": "G",
+      "nodeId": "230:3316",
+      "screensIncludingInlineDetails": 18
+    }
+  ],
+  "coverNode": "233:2",
+  "delivery": "A–D retains native source layers; E–G editable SVG text/vector groups with retained screen images. Functional interactions remain in the web prototype.",
+  "website": "https://idol-guild-v2-xw0918.kingboat888.chatgpt.site"
+}
