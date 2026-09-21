@@ -1,0 +1,622 @@
+{
+  "seasonDays": 6,
+  "modules": [
+    {
+      "id": "A",
+      "title": "公会内 · 粉丝招募",
+      "zone": "已确定 · 原稿",
+      "summary": "保留 Figma 已确定的 MCN、应援中心与招募画面。"
+    },
+    {
+      "id": "B",
+      "title": "公会内 · 编队",
+      "zone": "已确定 · 原稿",
+      "summary": "保留现有多 IDOL 编队、派遣粉丝与出战入口。"
+    },
+    {
+      "id": "C",
+      "title": "地图 · 占领与 PK",
+      "zone": "已确定 · 原稿",
+      "summary": "保留地图、领地选择、舞台对决和胜负反馈。"
+    },
+    {
+      "id": "D",
+      "title": "驻守 · 求援与增援",
+      "zone": "已确定 · 原稿",
+      "summary": "保留求援、多人支援反馈与伙伴增援画面。"
+    },
+    {
+      "id": "E",
+      "title": "中心舞台 · 第 6 天",
+      "zone": "本次延伸",
+      "summary": "四阵营同场争夺；控制归属、累计表现、最终冠军分别展示。"
+    },
+    {
+      "id": "F",
+      "title": "赛季 · 结算与领奖",
+      "zone": "本次修订",
+      "summary": "仅结算本战区四盟；个人贡献、奖励领取、历史和跨季保留闭环。"
+    },
+    {
+      "id": "G",
+      "title": "新手 · S0 → S2",
+      "zone": "本次修订",
+      "summary": "招募编队 → 一场模拟 → 正式参战；求援与增援在首次需要时教学。"
+    },
+    {
+      "id": "H",
+      "title": "盛典 · 荣誉与长期经营",
+      "zone": "原有方案 · 沿用",
+      "summary": "保留上一版荣誉收藏、内容期待、贡献商店与回流体验入口。"
+    }
+  ],
+  "flows": [
+    {
+      "id": "daily",
+      "module": "A",
+      "title": "招募应援粉丝",
+      "steps": [
+        {
+          "id": "home",
+          "label": "MCN 主城"
+        },
+        {
+          "id": "support",
+          "label": "应援中心"
+        },
+        {
+          "id": "recruit-live",
+          "label": "招募进行中"
+        },
+        {
+          "id": "recruit-speed",
+          "label": "招募 · 加速确认"
+        },
+        {
+          "id": "recruit-reward",
+          "label": "获得应援粉丝"
+        }
+      ],
+      "branches": [
+        "support-detail",
+        "a-ad"
+      ]
+    },
+    {
+      "id": "formation",
+      "module": "B",
+      "title": "编队与派遣",
+      "steps": [
+        {
+          "id": "teams",
+          "label": "编队 · 已保存小队"
+        },
+        {
+          "id": "team-edit",
+          "label": "编队 · 选择 IDOL"
+        },
+        {
+          "id": "war-teams",
+          "label": "查看出战小队"
+        },
+        {
+          "id": "war-entry",
+          "label": "占点大战 · Battle"
+        },
+        {
+          "id": "war-roster",
+          "label": "选择已保存小队"
+        },
+        {
+          "id": "map",
+          "label": "地图 · 选择领地"
+        }
+      ],
+      "branches": [
+        "team-fans"
+      ]
+    },
+    {
+      "id": "occupation",
+      "module": "C",
+      "title": "占领与舞台对决",
+      "steps": [
+        {
+          "id": "map",
+          "label": "地图 · 选择领地"
+        },
+        {
+          "id": "territory",
+          "label": "领地 · 选中敌方"
+        },
+        {
+          "id": "battle",
+          "label": "PK · 舞台对决"
+        },
+        {
+          "id": "battle-event",
+          "label": "PK · 我方回合事件"
+        },
+        {
+          "id": "battle-rival",
+          "label": "PK · 对方回合事件"
+        },
+        {
+          "id": "win",
+          "label": "占领成功"
+        }
+      ],
+      "branches": [
+        "empty",
+        "lose",
+        "battle-report"
+      ]
+    },
+    {
+      "id": "defense",
+      "module": "D",
+      "title": "驻守求援",
+      "steps": [
+        {
+          "id": "map-low",
+          "label": "地图 · 待命不足"
+        },
+        {
+          "id": "aid-edit",
+          "label": "求援 · 编辑"
+        },
+        {
+          "id": "aid",
+          "label": "公会求援 · 我的请求"
+        },
+        {
+          "id": "aid-received",
+          "label": "多人增援反馈"
+        },
+        {
+          "id": "guard",
+          "label": "领地 · 我方驻守"
+        },
+        {
+          "id": "map",
+          "label": "地图 · 选择领地"
+        }
+      ],
+      "branches": [
+        "allies",
+        "aid-helped",
+        "d-aid-detail"
+      ]
+    },
+    {
+      "id": "reinforce",
+      "module": "D",
+      "title": "支援伙伴",
+      "steps": [
+        {
+          "id": "allies",
+          "label": "公会求援 · 支援伙伴"
+        },
+        {
+          "id": "aid-helped",
+          "label": "增援已送出"
+        },
+        {
+          "id": "map",
+          "label": "地图 · 选择领地"
+        }
+      ],
+      "branches": []
+    },
+    {
+      "id": "central",
+      "module": "E",
+      "title": "第 6 天 · 争夺中心舞台",
+      "steps": [
+        {
+          "id": "e-map",
+          "label": "第 6 天 · 中心舞台开放"
+        },
+        {
+          "id": "e-stage",
+          "label": "中心舞台 · 四方战况"
+        },
+        {
+          "id": "e-select",
+          "label": "挑战 · 选择已有小队"
+        },
+        {
+          "id": "e-confirm",
+          "label": "确认挑战中心舞台"
+        },
+        {
+          "id": "e-march",
+          "label": "小队前往中心舞台"
+        },
+        {
+          "id": "e-battle",
+          "label": "中心舞台 · PK 演出"
+        },
+        {
+          "id": "e-event",
+          "label": "中心舞台 · 回合事件"
+        },
+        {
+          "id": "e-win",
+          "label": "夺下中心舞台"
+        },
+        {
+          "id": "e-owned",
+          "label": "中心舞台 · 我方驻守"
+        }
+      ],
+      "branches": [
+        "e-locked",
+        "e-rules",
+        "e-lose",
+        "e-ledger",
+        "e-busy",
+        "e-short",
+        "e-changed",
+        "e-network"
+      ]
+    },
+    {
+      "id": "central-aid",
+      "module": "E",
+      "title": "中心舞台 · 求援与增援",
+      "steps": [
+        {
+          "id": "e-owned",
+          "label": "中心舞台 · 我方驻守"
+        },
+        {
+          "id": "e-aid",
+          "label": "中心舞台 · 发起求援"
+        },
+        {
+          "id": "e-aid-post",
+          "label": "中心舞台 · 等待伙伴"
+        },
+        {
+          "id": "e-aid-arrived",
+          "label": "中心舞台 · 增援到达"
+        },
+        {
+          "id": "e-owned",
+          "label": "中心舞台 · 我方驻守"
+        }
+      ],
+      "branches": [
+        "e-aid-confirm"
+      ]
+    },
+    {
+      "id": "finale",
+      "module": "E",
+      "title": "收官 · 冻结与决出冠军",
+      "steps": [
+        {
+          "id": "e-close",
+          "label": "终日收官 · 停止新行动"
+        },
+        {
+          "id": "e-last-battle",
+          "label": "收官对决 · 等待结果"
+        },
+        {
+          "id": "e-champion",
+          "label": "中心舞台 · 最终冠军"
+        },
+        {
+          "id": "f-result",
+          "label": "S1 · 赛季结算"
+        }
+      ],
+      "branches": [
+        "e-pending"
+      ]
+    },
+    {
+      "id": "season",
+      "module": "F",
+      "title": "赛季结算与奖励",
+      "steps": [
+        {
+          "id": "f-result",
+          "label": "S1 · 赛季结算"
+        },
+        {
+          "id": "f-personal",
+          "label": "赛季结算 · 我的贡献"
+        },
+        {
+          "id": "f-reward",
+          "label": "赛季奖励 · 待领取"
+        },
+        {
+          "id": "f-claimed",
+          "label": "赛季奖励 · 已领取"
+        },
+        {
+          "id": "f-history",
+          "label": "赛季档案 · S1"
+        },
+        {
+          "id": "f-carry",
+          "label": "下一赛季 · 什么会保留"
+        },
+        {
+          "id": "f-rest",
+          "label": "休战期 · 准备下一赛季"
+        }
+      ],
+      "branches": [
+        "e-pending",
+        "f-claim-error",
+        "f-ineligible",
+        "f-next"
+      ]
+    },
+    {
+      "id": "onboarding",
+      "module": "G",
+      "title": "S0 → S2 · 渐进教学",
+      "steps": [
+        {
+          "id": "g-s0",
+          "label": "S0 · 认识应援粉丝"
+        },
+        {
+          "id": "g-recruit",
+          "label": "S0 · 第一次招募"
+        },
+        {
+          "id": "g-live",
+          "label": "S0 · 等待招募完成"
+        },
+        {
+          "id": "g-claim",
+          "label": "S0 · 领取粉丝"
+        },
+        {
+          "id": "g-team",
+          "label": "S0 · 保存编队"
+        },
+        {
+          "id": "g-sim-ready",
+          "label": "S1 · 只练习一场"
+        },
+        {
+          "id": "g-sim",
+          "label": "S1 · 认识舞台回合"
+        },
+        {
+          "id": "g-sim-event",
+          "label": "S1 · 认识回合事件"
+        },
+        {
+          "id": "g-sim-result",
+          "label": "S1 · 练习完成"
+        },
+        {
+          "id": "g-real",
+          "label": "S2 · 第一次正式参战"
+        },
+        {
+          "id": "g-map",
+          "label": "S2 · 选择一块领地"
+        },
+        {
+          "id": "g-target",
+          "label": "S2 · 确认挑战"
+        },
+        {
+          "id": "g-battle",
+          "label": "S2 · 完成正式对决"
+        },
+        {
+          "id": "g-win",
+          "label": "S2 · 阅读最终结算"
+        },
+        {
+          "id": "g-complete",
+          "label": "基础引导已完成"
+        }
+      ],
+      "branches": [
+        "g-paused"
+      ]
+    },
+    {
+      "id": "context-aid",
+      "module": "G",
+      "title": "首次需要时 · 求援教学",
+      "steps": [
+        {
+          "id": "g-aid",
+          "label": "首次缺员 · 学会求援"
+        },
+        {
+          "id": "g-aid-wait",
+          "label": "首次求援 · 查看帮助"
+        },
+        {
+          "id": "g-aid-done",
+          "label": "首次求援 · 收到支援"
+        },
+        {
+          "id": "guard",
+          "label": "领地 · 我方驻守"
+        }
+      ],
+      "branches": []
+    },
+    {
+      "id": "context-reinforce",
+      "module": "G",
+      "title": "首次需要时 · 增援教学",
+      "steps": [
+        {
+          "id": "g-reinforce",
+          "label": "首次增援 · 帮助伙伴"
+        },
+        {
+          "id": "g-reinforce-done",
+          "label": "增援教学已完成"
+        },
+        {
+          "id": "allies",
+          "label": "公会求援 · 支援伙伴"
+        }
+      ],
+      "branches": []
+    },
+    {
+      "id": "legacy-idol",
+      "module": "H",
+      "title": "领队上榜与单推荣誉",
+      "steps": [
+        {
+          "id": "legacy-honor",
+          "label": "盛典荣誉"
+        },
+        {
+          "id": "legacy-idol-rank",
+          "label": "领队 IDOL 榜"
+        },
+        {
+          "id": "legacy-idol-detail",
+          "label": "我的应援贡献"
+        },
+        {
+          "id": "legacy-single-honor",
+          "label": "单推目标"
+        },
+        {
+          "id": "legacy-single-claimed",
+          "label": "领取荣誉"
+        },
+        {
+          "id": "legacy-honor-collection",
+          "label": "长期收藏"
+        }
+      ],
+      "branches": [
+        "legacy-multi-honor",
+        "legacy-content-intent"
+      ]
+    },
+    {
+      "id": "legacy-multi",
+      "module": "H",
+      "title": "群推荣誉",
+      "steps": [
+        {
+          "id": "legacy-honor",
+          "label": "盛典荣誉"
+        },
+        {
+          "id": "legacy-multi-honor",
+          "label": "多 IDOL 带队"
+        },
+        {
+          "id": "legacy-multi-claimed",
+          "label": "领取荣誉"
+        },
+        {
+          "id": "legacy-honor-collection",
+          "label": "长期收藏"
+        }
+      ],
+      "branches": [
+        "legacy-single-honor",
+        "legacy-idol-detail"
+      ]
+    },
+    {
+      "id": "legacy-content",
+      "module": "H",
+      "title": "专属内容期待",
+      "steps": [
+        {
+          "id": "legacy-idol-rank",
+          "label": "领队热度"
+        },
+        {
+          "id": "legacy-idol-detail",
+          "label": "IDOL 详情"
+        },
+        {
+          "id": "legacy-content-intent",
+          "label": "选剧情 / 服装"
+        },
+        {
+          "id": "legacy-content-recorded",
+          "label": "记录期待"
+        }
+      ],
+      "branches": [
+        "legacy-honor"
+      ]
+    },
+    {
+      "id": "legacy-return",
+      "module": "H",
+      "title": "老玩家回归",
+      "steps": [
+        {
+          "id": "legacy-return1",
+          "label": "认识粉丝"
+        },
+        {
+          "id": "legacy-return2",
+          "label": "长期编队"
+        },
+        {
+          "id": "legacy-return3",
+          "label": "占点消耗"
+        },
+        {
+          "id": "legacy-return4",
+          "label": "团队回报"
+        },
+        {
+          "id": "legacy-return-gift",
+          "label": "体验礼"
+        },
+        {
+          "id": "legacy-return-training",
+          "label": "自选模拟"
+        },
+        {
+          "id": "legacy-return-finish",
+          "label": "回归完成"
+        }
+      ],
+      "branches": []
+    },
+    {
+      "id": "legacy-shop",
+      "module": "H",
+      "title": "贡献商店 · 原有方案",
+      "steps": [
+        {
+          "id": "legacy-shop",
+          "label": "公会商店·道具货架"
+        },
+        {
+          "id": "legacy-shop-confirm",
+          "label": "商店·兑换确认"
+        },
+        {
+          "id": "legacy-shop-done",
+          "label": "公会商店·兑换完成"
+        }
+      ],
+      "branches": []
+    }
+  ],
+  "stateCount": 106,
+  "scope": "A-D frozen Figma screens; E-G revised; H retained proposals"
+}

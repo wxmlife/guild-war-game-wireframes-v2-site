@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "modules": 8,
+  "flows": 17,
+  "screens": 106,
+  "links": 227,
+  "checks": [
+    "route and asset integrity",
+    "source UI remains image-based",
+    "fan conservation",
+    "order and result idempotency",
+    "single claim",
+    "closing restrictions",
+    "partner ownership",
+    "simulation isolation",
+    "guide resume",
+    "partial and batch aid",
+    "six-day season carryover",
+    "standalone export"
+  ]
+}

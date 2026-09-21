@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IDOL · V2 分模块原型</title><link rel="stylesheet" href="review.css"></head>
+<body><header><div><strong>IDOL · 公会改造 / V2 分模块版</strong><small>公会内长期经营 → 公会外占点 Battle → 盛典与 IDOL 荣誉</small></div><div class="header-tools"><a class="review-link" href="https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof?node-id=121-12926" target="_blank" rel="noopener noreferrer">Figma 设计稿 ↗</a><button id="overview-button">分线总览</button><button id="play-button" class="gold">体验原型</button></div></header>
+<main id="main"><aside class="nav"><h2>按模块评审</h2><p class="muted">V2 游戏布局 · V1 分线浏览方式</p><nav id="modules"></nav><p class="muted">选择分线或示例状态会载入独立演示；画面内跨模块操作保留当前资产。</p></aside>
+<section class="stage"><div id="zone"></div><div id="phone" aria-label="可点击游戏原型"></div><div class="tools"><button id="back">回看上一步</button><button id="restart">重走本线</button><button id="advance" hidden>继续演示</button></div><div id="current-count"></div></section>
+<aside class="review"><p id="path"></p><h1 id="screen-title"></h1><div id="proposal" hidden>新增方案 · 奖励门槛 / 热度算法待定</div><p id="note"></p><button id="share-step">复制当前步骤链接</button><p id="share-status" class="muted" role="status"></p>
+<label for="flow">从一条完整流程开始</label><select id="flow" aria-label="从一条完整流程开始"></select><div id="steps"></div>
+<hr><label for="state">本线其他状态 / 分支</label><select id="state" aria-label="本线其他状态"></select><label><input type="checkbox" id="hotspots"> 显示可点区域</label><label><input type="checkbox" id="auto" checked> 自动演示等待 / 对决</label>
+<p class="muted">数值、保护和回归参数沿用 V2 演示；荣誉为新增提案。领队热度不作为可消费货币。</p><div class="tools"><button id="score-event">模拟积分结算</button><button id="season-event">模拟赛季结束</button></div><hr><div class="tools"><button id="export-module">导出本模块 SVG</button><button id="export-all">导出全部 SVG</button></div><p><button id="copy">复制整套线框到 Figma</button></p><p id="status" role="status"></p></aside>
+<section id="overview" aria-label="模块分线总览"></section></main>
+<script src="game.js"></script><script src="game-extra.js"></script><script src="refine.js"></script><script src="modules.js"></script><script src="flows.js"></script><script src="render.js"></script><script src="module-runtime.js"></script><script src="review-app.js"></script>
+</body></html>

@@ -1,0 +1,339 @@
+[
+  {
+    "name": "A-0",
+    "source": "locked-A.svg",
+    "label": "home",
+    "crop": [
+      0,
+      96,
+      402,
+      852
+    ]
+  },
+  {
+    "name": "A-1",
+    "source": "locked-A.svg",
+    "label": "recruit",
+    "crop": [
+      468,
+      94,
+      402,
+      885
+    ]
+  },
+  {
+    "name": "A-2",
+    "source": "locked-A.svg",
+    "label": "recruit-running",
+    "crop": [
+      924,
+      115,
+      402,
+      885
+    ]
+  },
+  {
+    "name": "A-3",
+    "source": "locked-A.svg",
+    "label": "live",
+    "crop": [
+      1404,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "A-4",
+    "source": "locked-A.svg",
+    "label": "speedup",
+    "crop": [
+      1856,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "A-5",
+    "source": "locked-A.svg",
+    "label": "reward",
+    "crop": [
+      2340,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "B-0",
+    "source": "locked-B.svg",
+    "label": "formation",
+    "crop": [
+      2,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "B-1",
+    "source": "locked-B.svg",
+    "label": "idol-picker",
+    "crop": [
+      467,
+      94,
+      408,
+      890
+    ]
+  },
+  {
+    "name": "B-2",
+    "source": "locked-B.svg",
+    "label": "formation-guarding",
+    "crop": [
+      937,
+      94,
+      403,
+      874
+    ]
+  },
+  {
+    "name": "B-4",
+    "source": "locked-B.svg",
+    "label": "squad-picker",
+    "crop": [
+      1874,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "B-6",
+    "source": "locked-B.svg",
+    "label": "battle-entry",
+    "crop": [
+      2810,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "B-7",
+    "source": "locked-B.svg",
+    "label": "saved-squads",
+    "crop": [
+      3278,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-0",
+    "source": "locked-C.svg",
+    "label": "map",
+    "crop": [
+      0,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-1",
+    "source": "locked-C.svg",
+    "label": "enemy",
+    "crop": [
+      468,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-2",
+    "source": "locked-C.svg",
+    "label": "neutral",
+    "crop": [
+      928,
+      92,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-3",
+    "source": "locked-C.svg",
+    "label": "pk",
+    "crop": [
+      1404,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-4",
+    "source": "locked-C.svg",
+    "label": "pk-own-exhaustion",
+    "crop": [
+      1868,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-5",
+    "source": "locked-C.svg",
+    "label": "pk-enemy-exhaustion",
+    "crop": [
+      2327,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-6",
+    "source": "locked-C.svg",
+    "label": "victory",
+    "crop": [
+      2802,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-7",
+    "source": "locked-C.svg",
+    "label": "defeat",
+    "crop": [
+      3276,
+      94,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-2",
+    "source": "locked-D.svg",
+    "label": "request-own",
+    "crop": [
+      936,
+      95,
+      408,
+      842
+    ]
+  },
+  {
+    "name": "D-3",
+    "source": "locked-D.svg",
+    "label": "received",
+    "crop": [
+      1411,
+      63,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-5",
+    "source": "locked-D.svg",
+    "label": "allies",
+    "crop": [
+      2333,
+      40,
+      408,
+      874
+    ]
+  },
+  {
+    "name": "D-6",
+    "source": "locked-D.svg",
+    "label": "guard",
+    "crop": [
+      4720,
+      81,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-7",
+    "source": "locked-D.svg",
+    "label": "chat",
+    "crop": [
+      5188,
+      81,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-8",
+    "source": "locked-D.svg",
+    "label": "donation-confirm",
+    "crop": [
+      5656,
+      81,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-9",
+    "source": "locked-D.svg",
+    "label": "donation-done",
+    "crop": [
+      6124,
+      81,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-0",
+    "source": "map-low.svg",
+    "crop": [
+      0,
+      0,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-1",
+    "source": "aid-edit.svg",
+    "crop": [
+      0,
+      0,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "D-4",
+    "source": "guard.svg",
+    "crop": [
+      0,
+      0,
+      402,
+      874
+    ]
+  },
+  {
+    "name": "C-8",
+    "source": "report.svg",
+    "crop": [
+      0,
+      0,
+      402,
+      874
+    ]
+  }
+]

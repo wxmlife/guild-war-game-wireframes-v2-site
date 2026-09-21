@@ -1,0 +1,40 @@
+(function(){
+const D=window.IDOLData,S=D.screens,h=(x,y,w,h,to,label,action)=>({x,y,w,h,to,label,action});
+S.home.hits=[h(294,554,81,52,'support','Fans · 应援中心'),h(296,470,81,64,'teams','Team Setting · 编队'),h(154,476,130,36,'war-entry','Crew Clash · 进入 Battle')];
+S.home.note='沿用已确定的 MCN 主城原画。Fans 与 Team Setting 对应原稿入口；Crew Clash 的可见招牌接入 Battle。';
+S.support.hits=[h(254,368,99,38,'recruit-live','体力 −1 · 招募'),h(111,776,174,48,'teams','前往编队'),h(181,852,34,32,'home','关闭'),h(254,432,99,38,'a-ad','广告 0/2')];
+S['support-detail'].title='应援中心 · 招募等待';S['support-detail'].hits=[h(254,368,99,38,'recruit-speed','加速当前招募'),h(257,212,102,41,'recruit-speed','加速'),h(111,776,174,48,'teams','前往编队'),h(181,852,34,32,'home','关闭')];
+S['recruit-live'].hits=[h(112,598,178,49,'recruit-speed','加速完成'),h(184,694,34,32,'support-detail','关闭 · 招募继续')];
+S['recruit-speed'].title='招募 · 加速确认';S['recruit-speed'].hits=[h(112,515,178,46,'recruit-reward','确定加速'),h(184,598,34,32,'recruit-live','取消')];
+S['recruit-reward'].hits=[h(112,515,178,46,'support','确认领取','recruit'),h(184,598,34,32,'support','关闭奖励','recruit')];
+S.teams.hits=[h(305,265,62,75,'team-edit','添加 IDOL'),h(87,128,225,43,'war-teams','选择已有编队'),h(100,732,203,40,'war-entry','Crew Battle'),h(185,787,34,37,'home','关闭'),h(130,344,142,31,'teams','自动分配','autoTeam')];
+S['team-edit'].hits=[h(127,770,157,51,'teams','保存编队'),h(31,772,64,51,'teams','返回'),h(324,772,64,51,'team-edit','重置选择','resetTeam')];
+S['team-fans'].title='编队 · 驻守中不可修改';S['team-fans'].hits=[h(185,787,34,37,'home','关闭')];S['team-fans'].note='沿用原稿驻守中的禁用态。先结束驻守，才能修改此编队。';
+S['war-teams'].hits=[h(45,278,305,80,'teams','选择编队 1'),h(45,369,305,80,'teams','选择编队 2'),h(45,460,305,80,'team-fans','查看驻守中的编队 3'),h(184,615,34,34,'teams','关闭')];
+S['war-entry'].hits=[h(105,582,192,49,'war-roster','进入占点地图'),h(184,686,34,34,'home','关闭')];
+S['war-roster'].hits=[h(239,307,110,35,'map','选择主力队'),h(239,449,110,35,'map','选择支援队'),h(111,615,180,47,'teams','回公会调整'),h(184,713,34,34,'war-entry','关闭')];
+S.map.hits=[h(224,420,95,127,'territory','N-12 · 敌方领地'),h(309,568,88,114,'empty','查看无主领地'),h(6,217,205,198,'e-locked','中心舞台 · 查看开放时间'),h(3,824,55,47,'home','返回公会'),h(9,763,57,59,'aid','公会求援')];
+S.territory.hits=[h(123,649,156,53,'battle','挑战'),h(111,578,56,23,'war-roster','调整小队'),h(180,772,34,34,'map','关闭')];
+S.empty.hits=[h(123,649,156,53,'guard','占领'),h(111,538,56,23,'war-roster','调整小队'),h(180,772,34,34,'map','关闭')];
+S.win.hits=[h(129,690,142,50,'guard','继续'),h(282,691,46,45,'battle-report','报告')];
+S.lose.hits=[h(129,782,142,50,'map','继续'),h(282,782,46,46,'battle-report','报告'),h(38,645,103,94,'support','提升应援粉丝'),h(161,645,87,94,'teams','调整角色编队')];
+S['battle-report']={id:'battle-report',module:'C',title:'对决 · 战报',asset:'assets/C-8.webp',locked:true,hits:[h(184,767,36,37,'win','关闭报告')],note:'沿用已确定的原版战报画面。源稿截图中的历史样例数字保留，新增流程的最终周期统一为 6 天。'};
+S['map-low'].hits=[h(209,372,126,157,'aid-edit','驻守缺员 · 发起求援'),h(215,806,63,64,'aid','打开公会求援')];
+S['aid-edit'].hits=[h(107,552,189,48,'aid','发到公会聊天'),h(184,650,34,32,'map-low','关闭')];
+S.aid.hits=[h(207,140,171,47,'allies','增援盟友'),h(312,340,53,30,'guard','定位驻守'),h(185,783,37,36,'map-low','关闭')];S.aid.auto='aid-received';S.aid.note='保留原稿“进行中”请求及灰色发送按钮。右下继续演示可模拟伙伴支援到达。';
+S['aid-received'].hits=[h(23,738,348,47,'guard','查看驻守'),h(286,568,78,26,'d-aid-detail','增援明细'),h(179,815,37,36,'guard','关闭')];
+S.guard.hits=[h(123,649,156,53,'aid-edit','求援'),h(180,772,34,34,'map','关闭')];
+S.allies.hits=[h(30,142,171,45,'aid','发送求援'),h(262,379,102,36,'aid-helped','增援 Luna 100','aid100-luna'),h(262,495,102,36,'aid-helped','增援 Mika 100','aid100-mika'),h(262,611,102,36,'aid-helped','增援 Jason 100','aid100-jason'),h(30,692,348,45,'aid-helped','一键增援 4 条 −400','aid400'),h(185,766,38,36,'map','关闭')];
+const extra=(id,module,title,body,buttons,asset)=>S[id]={id,module,title,body,buttons,asset:asset||'assets/D-3.webp'};
+extra('d-aid-detail','D','增援明细', '<div class="callout"><b>收到支援 +2,000</b><span>5 位伙伴共同增援</span></div><div class="stat-row"><span>进入本队驻守</span><b>1,600</b></div><div class="stat-row"><span>剩余转入待命</span><b>400</b></div><p class="phone-note">此处展开原稿反馈的明细；请求补满后结束，旧请求不再接受新增援。</p>',[{label:'返回反馈',to:'aid-received'}]);
+extra('a-ad','A','广告招募', '<div class="callout"><b>观看广告招募粉丝</b><span>今日使用 0 / 2</span></div><p class="phone-note">原型中点击完成观看，即可查看招募奖励。真实广告由游戏接入。</p>',[{label:'模拟完成观看',to:'recruit-reward'},{label:'取消',to:'support',kind:'blue'}],'assets/A-1.webp');
+const updateCoach=(id,target,next,action)=>{S[id].target=target;S[id].hits=[h(...target,next||S[id].next,'点击高亮区域',action||S[id].action)];if(next)S[id].next=next};
+updateCoach('g-map',[224,420,95,127]);updateCoach('g-s0',[294,554,81,52]);updateCoach('g-recruit',[254,368,99,38]);updateCoach('g-live',[112,598,178,49]);updateCoach('g-claim',[112,515,178,46]);updateCoach('g-team',[100,732,203,40]);updateCoach('g-win',[129,690,142,50]);updateCoach('g-aid',[107,552,189,48]);updateCoach('g-aid-wait',[207,140,171,47]);updateCoach('g-aid-done',[23,738,348,47]);updateCoach('g-reinforce',[262,379,102,36]);
+S['g-aid-wait'].target=[42,267,329,327];S['g-aid-wait'].hits=[h(42,267,329,327,'g-aid-done','查看支援到达反馈')];
+S['g-team'].coach='这是已经保存的 IDOL 编队。点击 Crew Battle，接下来用一场模拟认识舞台对决。';
+D.flows.find(f=>f.id==='daily').steps=['home','support','recruit-live','recruit-speed','recruit-reward'].map(id=>({id,label:S[id].title}));D.flows.find(f=>f.id==='daily').branches=['support-detail','a-ad'];
+D.flows.find(f=>f.id==='formation').steps=['teams','team-edit','war-teams','war-entry','war-roster','map'].map(id=>({id,label:S[id].title}));D.flows.find(f=>f.id==='formation').branches=['team-fans'];D.flows.find(f=>f.id==='defense').branches.push('d-aid-detail');
+// Match native source coordinates to the proportional phone asset; no UI layout is redrawn.
+const dims={'A-0':[402,852],'A-1':[402,885],'A-2':[402,885],'B-1':[408,890],'B-2':[403,874],'D-2':[408,842],'D-5':[408,874]};
+for(const s of Object.values(S)){const name=s.asset?.split('/').pop()?.replace('.webp',''),dim=dims[name];if(!dim)continue;const scale=Math.min(402/dim[0],874/dim[1]),dx=(402-dim[0]*scale)/2;for(const p of s.hits||[]){p.x=p.x*scale+dx;p.y*=scale;p.w*=scale;p.h*=scale}if(s.target)s.target=[s.target[0]*scale+dx,s.target[1]*scale,s.target[2]*scale,s.target[3]*scale]}
+})();
