@@ -211,35 +211,15 @@
     {
       "id": "central",
       "module": "E",
-      "title": "第 6 天 · 争夺中心舞台",
+      "title": "最终赛 · 直接 Battle",
       "steps": [
         {
           "id": "e-map",
-          "label": "第 6 天 · 中心舞台开放"
-        },
-        {
-          "id": "e-stage",
-          "label": "中心舞台 · 四方战况"
-        },
-        {
-          "id": "e-select",
-          "label": "挑战 · 选择已有小队"
-        },
-        {
-          "id": "e-confirm",
-          "label": "确认挑战中心舞台"
-        },
-        {
-          "id": "e-march",
-          "label": "小队前往中心舞台"
+          "label": "中心舞台 · 最终赛"
         },
         {
           "id": "e-battle",
-          "label": "中心舞台 · PK 演出"
-        },
-        {
-          "id": "e-event",
-          "label": "中心舞台 · 回合事件"
+          "label": "中心舞台 · Battle"
         },
         {
           "id": "e-win",
@@ -247,14 +227,14 @@
         },
         {
           "id": "e-owned",
-          "label": "中心舞台 · 我方驻守"
+          "label": "中心舞台 · 驻守中"
         }
       ],
       "branches": [
         "e-locked",
-        "e-rules",
+        "e-event",
         "e-lose",
-        "e-ledger",
+        "e-recalled",
         "e-busy",
         "e-short",
         "e-changed",
@@ -267,16 +247,12 @@
       "title": "中心舞台 · 求援与增援",
       "steps": [
         {
-          "id": "e-owned",
-          "label": "中心舞台 · 我方驻守"
-        },
-        {
           "id": "e-aid",
-          "label": "中心舞台 · 发起求援"
+          "label": "中心舞台 · 求援"
         },
         {
           "id": "e-aid-post",
-          "label": "中心舞台 · 等待伙伴"
+          "label": "中心舞台 · 求援中"
         },
         {
           "id": "e-aid-arrived",
@@ -284,7 +260,7 @@
         },
         {
           "id": "e-owned",
-          "label": "中心舞台 · 我方驻守"
+          "label": "中心舞台 · 驻守中"
         }
       ],
       "branches": [
@@ -294,65 +270,39 @@
     {
       "id": "finale",
       "module": "E",
-      "title": "收官 · 冻结与决出冠军",
+      "title": "收官 · 自动结算",
       "steps": [
         {
           "id": "e-close",
-          "label": "终日收官 · 停止新行动"
-        },
-        {
-          "id": "e-last-battle",
-          "label": "收官对决 · 等待结果"
-        },
-        {
-          "id": "e-champion",
-          "label": "中心舞台 · 最终冠军"
+          "label": "赛季结算中"
         },
         {
           "id": "f-result",
           "label": "S1 · 赛季结算"
         }
       ],
-      "branches": [
-        "e-pending"
-      ]
+      "branches": []
     },
     {
       "id": "season",
       "module": "F",
-      "title": "赛季结算与奖励",
+      "title": "赛季结算 · 领取完成",
       "steps": [
         {
           "id": "f-result",
           "label": "S1 · 赛季结算"
         },
         {
-          "id": "f-personal",
-          "label": "赛季结算 · 我的贡献"
-        },
-        {
-          "id": "f-reward",
-          "label": "赛季奖励 · 待领取"
-        },
-        {
           "id": "f-claimed",
-          "label": "赛季奖励 · 已领取"
+          "label": "赛季奖励已领取"
         },
         {
-          "id": "f-history",
-          "label": "赛季档案 · S1"
-        },
-        {
-          "id": "f-carry",
-          "label": "下一赛季 · 什么会保留"
-        },
-        {
-          "id": "f-rest",
-          "label": "休战期 · 准备下一赛季"
+          "id": "home",
+          "label": "MCN 主城"
         }
       ],
       "branches": [
-        "e-pending",
+        "e-close",
         "f-claim-error",
         "f-ineligible",
         "f-next"
@@ -361,7 +311,7 @@
     {
       "id": "onboarding",
       "module": "G",
-      "title": "S0 → S2 · 渐进教学",
+      "title": "招募 → 一场模拟 → 正式参战",
       "steps": [
         {
           "id": "g-s0",
@@ -373,7 +323,7 @@
         },
         {
           "id": "g-live",
-          "label": "S0 · 等待招募完成"
+          "label": "S0 · 完成招募"
         },
         {
           "id": "g-claim",
@@ -381,50 +331,39 @@
         },
         {
           "id": "g-team",
-          "label": "S0 · 保存编队"
-        },
-        {
-          "id": "g-sim-ready",
-          "label": "S1 · 只练习一场"
+          "label": "S0 · 默认编队"
         },
         {
           "id": "g-sim",
-          "label": "S1 · 认识舞台回合"
-        },
-        {
-          "id": "g-sim-event",
-          "label": "S1 · 认识回合事件"
+          "label": "S1 · 模拟 Battle"
         },
         {
           "id": "g-sim-result",
-          "label": "S1 · 练习完成"
-        },
-        {
-          "id": "g-real",
-          "label": "S2 · 第一次正式参战"
+          "label": "练习完成"
         },
         {
           "id": "g-map",
-          "label": "S2 · 选择一块领地"
+          "label": "S2 · 选择领地"
         },
         {
           "id": "g-target",
-          "label": "S2 · 确认挑战"
+          "label": "S2 · 正式挑战"
         },
         {
           "id": "g-battle",
-          "label": "S2 · 完成正式对决"
+          "label": "S2 · 正式 Battle"
         },
         {
           "id": "g-win",
-          "label": "S2 · 阅读最终结算"
+          "label": "S2 · 占领成功"
         },
         {
-          "id": "g-complete",
-          "label": "基础引导已完成"
+          "id": "guard",
+          "label": "领地 · 我方驻守"
         }
       ],
       "branches": [
+        "g-sim-event",
         "g-paused"
       ]
     },
@@ -435,15 +374,15 @@
       "steps": [
         {
           "id": "g-aid",
-          "label": "首次缺员 · 学会求援"
+          "label": "首次缺员 · 求援"
         },
         {
           "id": "g-aid-wait",
-          "label": "首次求援 · 查看帮助"
+          "label": "求援中"
         },
         {
           "id": "g-aid-done",
-          "label": "首次求援 · 收到支援"
+          "label": "收到增援"
         },
         {
           "id": "guard",
@@ -463,7 +402,7 @@
         },
         {
           "id": "g-reinforce-done",
-          "label": "增援教学已完成"
+          "label": "增援完成"
         },
         {
           "id": "allies",
@@ -617,6 +556,26 @@
       "branches": []
     }
   ],
-  "stateCount": 106,
-  "scope": "A-D frozen Figma screens; E-G revised; H retained proposals"
+  "stateCount": 90,
+  "revision": "single-primary-v4",
+  "scope": "A-D frozen; E-G simplified continuous flows; H retained proposals",
+  "aliases": {
+    "e-stage": "e-map",
+    "e-select": "e-map",
+    "e-confirm": "e-map",
+    "e-march": "e-battle",
+    "e-rules": "e-map",
+    "e-ledger": "e-win",
+    "e-last-battle": "e-close",
+    "e-pending": "e-close",
+    "e-champion": "f-result",
+    "f-personal": "f-result",
+    "f-reward": "f-result",
+    "f-history": "f-claimed",
+    "f-carry": "f-claimed",
+    "f-rest": "home",
+    "g-sim-ready": "g-sim",
+    "g-real": "g-map",
+    "g-complete": "guard"
+  }
 }

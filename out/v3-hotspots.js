@@ -23,7 +23,9 @@ S['map-low'].hits=[h(209,372,126,157,'aid-edit','驻守缺员 · 发起求援'),
 S['aid-edit'].hits=[h(107,552,189,48,'aid','发到公会聊天'),h(184,650,34,32,'map-low','关闭')];
 S.aid.hits=[h(207,140,171,47,'allies','增援盟友'),h(312,340,53,30,'guard','定位驻守'),h(185,783,37,36,'map-low','关闭')];S.aid.auto='aid-received';S.aid.note='保留原稿“进行中”请求及灰色发送按钮。右下继续演示可模拟伙伴支援到达。';
 S['aid-received'].hits=[h(23,738,348,47,'guard','查看驻守'),h(286,568,78,26,'d-aid-detail','增援明细'),h(179,815,37,36,'guard','关闭')];
-S.guard.hits=[h(123,649,156,53,'aid-edit','求援'),h(180,772,34,34,'map','关闭')];
+S.guard.hits=[{...h(123,649,156,53,'map','撤回','recallTerritory'),display:'撤回'},{...h(177,538,55,23,'aid-edit','求援'),display:'求援',appearance:'small'},h(180,772,34,34,'map','关闭')];
+S.guard.note='按最新确认：N-12 驻守详情下方主按钮为“撤回”；“求援”移到“调整”旁边。求援完成接回驻守，撤回直接返回地图。';
+S.guard.amended=true;
 S.allies.hits=[h(30,142,171,45,'aid','发送求援'),h(262,379,102,36,'aid-helped','增援 Luna 100','aid100-luna'),h(262,495,102,36,'aid-helped','增援 Mika 100','aid100-mika'),h(262,611,102,36,'aid-helped','增援 Jason 100','aid100-jason'),h(30,692,348,45,'aid-helped','一键增援 4 条 −400','aid400'),h(185,766,38,36,'map','关闭')];
 const extra=(id,module,title,body,buttons,asset)=>S[id]={id,module,title,body,buttons,asset:asset||'assets/D-3.webp'};
 extra('d-aid-detail','D','增援明细', '<div class="callout"><b>收到支援 +2,000</b><span>5 位伙伴共同增援</span></div><div class="stat-row"><span>进入本队驻守</span><b>1,600</b></div><div class="stat-row"><span>剩余转入待命</span><b>400</b></div><p class="phone-note">此处展开原稿反馈的明细；请求补满后结束，旧请求不再接受新增援。</p>',[{label:'返回反馈',to:'aid-received'}]);
@@ -31,7 +33,7 @@ extra('a-ad','A','广告招募', '<div class="callout"><b>观看广告招募粉�
 const updateCoach=(id,target,next,action)=>{S[id].target=target;S[id].hits=[h(...target,next||S[id].next,'点击高亮区域',action||S[id].action)];if(next)S[id].next=next};
 updateCoach('g-map',[224,420,95,127]);updateCoach('g-s0',[294,554,81,52]);updateCoach('g-recruit',[254,368,99,38]);updateCoach('g-live',[112,598,178,49]);updateCoach('g-claim',[112,515,178,46]);updateCoach('g-team',[100,732,203,40]);updateCoach('g-win',[129,690,142,50]);updateCoach('g-aid',[107,552,189,48]);updateCoach('g-aid-wait',[207,140,171,47]);updateCoach('g-aid-done',[23,738,348,47]);updateCoach('g-reinforce',[262,379,102,36]);
 S['g-aid-wait'].target=[42,267,329,327];S['g-aid-wait'].hits=[h(42,267,329,327,'g-aid-done','查看支援到达反馈')];
-S['g-team'].coach='这是已经保存的 IDOL 编队。点击 Crew Battle，接下来用一场模拟认识舞台对决。';
+S['g-team'].coach='编队已准备好。点击 Crew Battle，练习一场，不消耗真实粉丝。';
 D.flows.find(f=>f.id==='daily').steps=['home','support','recruit-live','recruit-speed','recruit-reward'].map(id=>({id,label:S[id].title}));D.flows.find(f=>f.id==='daily').branches=['support-detail','a-ad'];
 D.flows.find(f=>f.id==='formation').steps=['teams','team-edit','war-teams','war-entry','war-roster','map'].map(id=>({id,label:S[id].title}));D.flows.find(f=>f.id==='formation').branches=['team-fans'];D.flows.find(f=>f.id==='defense').branches.push('d-aid-detail');
 // Match native source coordinates to the proportional phone asset; no UI layout is redrawn.
