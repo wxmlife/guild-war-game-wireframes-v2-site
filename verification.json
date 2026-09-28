@@ -1,9 +1,9 @@
 {
   "passed": true,
   "modules": 8,
-  "flows": 17,
-  "screens": 90,
-  "links": 199,
+  "flows": 19,
+  "screens": 100,
+  "links": 239,
   "checks": [
     "route and asset integrity",
     "source UI remains image-based",
@@ -19,11 +19,11 @@
     "standalone export",
     "single primary action in E-G",
     "direct Battle from introduction",
-    "two-action season claim loop",
+    "report to rewards to one-time claim",
     "context-preserving recruitment",
     "automatic battle and closing transitions",
     "garrison recall and re-deployment",
     "recall preserves fatigue and ally ownership",
-    "N-12 approved withdraw button and direct map return"
+    "latest V3 recall label and direct map return"
   ]
 }

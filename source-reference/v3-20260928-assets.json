@@ -1,0 +1,264 @@
+{
+  "date": "2026-09-28",
+  "fileKey": "3UrD3ReEc65mSIGWeAatof",
+  "pageId": "226:2",
+  "assets": [
+    {
+      "asset": "assets/v3-A-home.webp",
+      "figmaNode": "226:220",
+      "crop": [
+        0,
+        0,
+        402,
+        852
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-A-support.webp",
+      "figmaNode": "368:13",
+      "crop": null,
+      "placement": [
+        8,
+        125,
+        386,
+        619
+      ]
+    },
+    {
+      "asset": "assets/v3-A-boost.webp",
+      "figmaNode": "368:30",
+      "crop": null,
+      "placement": [
+        12,
+        210,
+        378,
+        375
+      ]
+    },
+    {
+      "asset": "assets/v3-B-team.webp",
+      "figmaNode": "226:982",
+      "crop": [
+        0,
+        0,
+        402,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-B-edit.webp",
+      "figmaNode": "226:1113",
+      "crop": [
+        0,
+        0,
+        408,
+        888
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-B-busy.webp",
+      "figmaNode": "226:1217",
+      "crop": [
+        1,
+        0,
+        402,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-B-list.webp",
+      "figmaNode": "226:1518",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-target.webp",
+      "figmaNode": "226:2035",
+      "crop": [
+        3,
+        0,
+        408,
+        899
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-battle.webp",
+      "figmaNode": "226:2304",
+      "crop": [
+        0,
+        40,
+        402,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-event.webp",
+      "figmaNode": "226:2474",
+      "crop": [
+        0,
+        40,
+        402,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-rival.webp",
+      "figmaNode": "226:2566",
+      "crop": [
+        0,
+        40,
+        402,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-win.webp",
+      "figmaNode": "226:2660",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-lose.webp",
+      "figmaNode": "226:2662",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-report.webp",
+      "figmaNode": "226:7517",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-D-request.webp",
+      "figmaNode": "226:3415",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-D-list.webp",
+      "figmaNode": "226:3084",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-D-received.webp",
+      "figmaNode": "226:3147",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-D-allies.webp",
+      "figmaNode": "226:3302",
+      "crop": [
+        0,
+        40,
+        408,
+        874
+      ],
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-D-guard.webp",
+      "figmaNode": "226:6942",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-E-intro.webp",
+      "figmaNode": "230:8",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-E-win.webp",
+      "figmaNode": "279:551",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-E-lose.webp",
+      "figmaNode": "279:553",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-daily-rank.webp",
+      "figmaNode": "286:631",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-personal-rank.webp",
+      "figmaNode": "286:634",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-guild-rank.webp",
+      "figmaNode": "288:642",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-daily-reward.webp",
+      "figmaNode": "288:644",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-personal-reward.webp",
+      "figmaNode": "288:645",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-guild-reward.webp",
+      "figmaNode": "288:646",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-report.webp",
+      "figmaNode": "288:647",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-report-details.webp",
+      "figmaNode": "301:649",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-F-points.webp",
+      "figmaNode": "439:13",
+      "crop": null,
+      "placement": [
+        0,
+        0,
+        402,
+        725
+      ]
+    },
+    {
+      "asset": "assets/v3-H-idol.webp",
+      "figmaNode": "385:2",
+      "crop": null,
+      "placement": null
+    },
+    {
+      "asset": "assets/v3-C-map.webp",
+      "figmaNode": "226:1907",
+      "composition": "Updated V3 HUD + inherited unannotated map"
+    }
+  ]
+}

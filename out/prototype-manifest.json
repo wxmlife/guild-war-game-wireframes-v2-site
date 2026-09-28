@@ -4,38 +4,38 @@
     {
       "id": "A",
       "title": "公会内 · 粉丝招募",
-      "zone": "已确定 · 原稿",
-      "summary": "保留 Figma 已确定的 MCN、应援中心与招募画面。"
+      "zone": "V3 · 9月28日同步",
+      "summary": "粉丝自然恢复；加速立即生效，补给购买后直接入池。"
     },
     {
       "id": "B",
       "title": "公会内 · 编队",
-      "zone": "已确定 · 原稿",
-      "summary": "保留现有多 IDOL 编队、派遣粉丝与出战入口。"
+      "zone": "V3 · 9月28日同步",
+      "summary": "沿用已保存队伍，在同页调配人数、查看胜率与预计损耗，点击 Battle 出战。"
     },
     {
       "id": "C",
       "title": "地图 · 占领与 PK",
-      "zone": "已确定 · 原稿",
-      "summary": "保留地图、领地选择、舞台对决和胜负反馈。"
+      "zone": "V3 · 9月28日同步",
+      "summary": "地图 → 目标 → 默认编队 → Battle；已删去原稿划掉的中间页。"
     },
     {
       "id": "D",
       "title": "驻守 · 求援与增援",
-      "zone": "已确定 · 原稿",
-      "summary": "保留求援、多人支援反馈与伙伴增援画面。"
+      "zone": "V3 · 9月28日同步",
+      "summary": "按本次新稿：驻守底部召回，面板内求援；收到增援后接回驻守。"
     },
     {
       "id": "E",
       "title": "中心舞台 · 第 6 天",
-      "zone": "本次延伸",
-      "summary": "四阵营同场争夺；控制归属、累计表现、最终冠军分别展示。"
+      "zone": "V3 · 9月28日同步",
+      "summary": "第6天盛典舞台开启，直接 Battle；三倍积分突出展示。"
     },
     {
       "id": "F",
-      "title": "赛季 · 结算与领奖",
-      "zone": "本次修订",
-      "summary": "仅结算本战区四盟；个人贡献、奖励领取、历史和跨季保留闭环。"
+      "title": "积分 · 排名与赛季奖励",
+      "zone": "V3 · 9月28日同步",
+      "summary": "积分详情、每日与赛季排名、奖励预览、赛季最终报告与领取。"
     },
     {
       "id": "G",
@@ -62,24 +62,18 @@
         },
         {
           "id": "support",
-          "label": "应援中心"
+          "label": "Fans Club · 粉丝池"
         },
         {
-          "id": "recruit-live",
-          "label": "招募进行中"
-        },
-        {
-          "id": "recruit-speed",
-          "label": "招募 · 加速确认"
-        },
-        {
-          "id": "recruit-reward",
-          "label": "获得应援粉丝"
+          "id": "map",
+          "label": "地图 · 选择领地"
         }
       ],
       "branches": [
-        "support-detail",
-        "a-ad"
+        "a-boost",
+        "a-rules",
+        "a-flyer-tip",
+        "a-stick-tip"
       ]
     },
     {
@@ -89,23 +83,15 @@
       "steps": [
         {
           "id": "teams",
-          "label": "编队 · 已保存小队"
+          "label": "Team · 编队与粉丝分配"
         },
         {
           "id": "team-edit",
           "label": "编队 · 选择 IDOL"
         },
         {
-          "id": "war-teams",
-          "label": "查看出战小队"
-        },
-        {
-          "id": "war-entry",
-          "label": "占点大战 · Battle"
-        },
-        {
-          "id": "war-roster",
-          "label": "选择已保存小队"
+          "id": "teams",
+          "label": "Team · 编队与粉丝分配"
         },
         {
           "id": "map",
@@ -113,6 +99,7 @@
         }
       ],
       "branches": [
+        "war-teams",
         "team-fans"
       ]
     },
@@ -127,7 +114,11 @@
         },
         {
           "id": "territory",
-          "label": "领地 · 选中敌方"
+          "label": "目标 · N-9 敌方驻守"
+        },
+        {
+          "id": "teams",
+          "label": "Team · 编队与粉丝分配"
         },
         {
           "id": "battle",
@@ -144,10 +135,13 @@
         {
           "id": "win",
           "label": "占领成功"
+        },
+        {
+          "id": "guard",
+          "label": "N-12 · 我方驻守"
         }
       ],
       "branches": [
-        "empty",
         "lose",
         "battle-report"
       ]
@@ -159,11 +153,11 @@
       "steps": [
         {
           "id": "map-low",
-          "label": "地图 · 待命不足"
+          "label": "驻守 · 首次缺员"
         },
         {
           "id": "aid-edit",
-          "label": "求援 · 编辑"
+          "label": "求援 · 设置人数"
         },
         {
           "id": "aid",
@@ -175,7 +169,7 @@
         },
         {
           "id": "guard",
-          "label": "领地 · 我方驻守"
+          "label": "N-12 · 我方驻守"
         },
         {
           "id": "map",
@@ -183,9 +177,7 @@
         }
       ],
       "branches": [
-        "allies",
-        "aid-helped",
-        "d-aid-detail"
+        "allies"
       ]
     },
     {
@@ -195,11 +187,7 @@
       "steps": [
         {
           "id": "allies",
-          "label": "公会求援 · 支援伙伴"
-        },
-        {
-          "id": "aid-helped",
-          "label": "增援已送出"
+          "label": "公会求援 · 增援盟友"
         },
         {
           "id": "map",
@@ -215,7 +203,7 @@
       "steps": [
         {
           "id": "e-map",
-          "label": "中心舞台 · 最终赛"
+          "label": "中心舞台 · 3倍积分开启"
         },
         {
           "id": "e-battle",
@@ -223,7 +211,7 @@
         },
         {
           "id": "e-win",
-          "label": "夺下中心舞台"
+          "label": "中心舞台 · 获胜 ×3"
         },
         {
           "id": "e-owned",
@@ -234,6 +222,7 @@
         "e-locked",
         "e-event",
         "e-lose",
+        "e-report",
         "e-recalled",
         "e-busy",
         "e-short",
@@ -278,7 +267,7 @@
         },
         {
           "id": "f-result",
-          "label": "S1 · 赛季结算"
+          "label": "公会战最终报告"
         }
       ],
       "branches": []
@@ -290,7 +279,11 @@
       "steps": [
         {
           "id": "f-result",
-          "label": "S1 · 赛季结算"
+          "label": "公会战最终报告"
+        },
+        {
+          "id": "f-report-details",
+          "label": "最终报告 · 我的奖励"
         },
         {
           "id": "f-claimed",
@@ -315,23 +308,15 @@
       "steps": [
         {
           "id": "g-s0",
-          "label": "S0 · 认识应援粉丝"
+          "label": "S0 · 认识粉丝"
         },
         {
           "id": "g-recruit",
-          "label": "S0 · 第一次招募"
-        },
-        {
-          "id": "g-live",
-          "label": "S0 · 完成招募"
-        },
-        {
-          "id": "g-claim",
-          "label": "S0 · 领取粉丝"
+          "label": "粉丝会自然恢复"
         },
         {
           "id": "g-team",
-          "label": "S0 · 默认编队"
+          "label": "S1 · 默认编队已就绪"
         },
         {
           "id": "g-sim",
@@ -343,11 +328,15 @@
         },
         {
           "id": "g-map",
-          "label": "S2 · 选择领地"
+          "label": "S2 · 正式占点"
         },
         {
           "id": "g-target",
-          "label": "S2 · 正式挑战"
+          "label": "查看目标"
+        },
+        {
+          "id": "g-real-team",
+          "label": "准备正式 Battle"
         },
         {
           "id": "g-battle",
@@ -358,8 +347,12 @@
           "label": "S2 · 占领成功"
         },
         {
+          "id": "g-held",
+          "label": "占领后持续获得积分"
+        },
+        {
           "id": "guard",
-          "label": "领地 · 我方驻守"
+          "label": "N-12 · 我方驻守"
         }
       ],
       "branches": [
@@ -378,15 +371,15 @@
         },
         {
           "id": "g-aid-wait",
-          "label": "求援中"
+          "label": "等待盟友增援"
         },
         {
           "id": "g-aid-done",
-          "label": "收到增援"
+          "label": "收到盟友增援"
         },
         {
           "id": "guard",
-          "label": "领地 · 我方驻守"
+          "label": "N-12 · 我方驻守"
         }
       ],
       "branches": []
@@ -401,12 +394,8 @@
           "label": "首次增援 · 帮助伙伴"
         },
         {
-          "id": "g-reinforce-done",
-          "label": "增援完成"
-        },
-        {
           "id": "allies",
-          "label": "公会求援 · 支援伙伴"
+          "label": "公会求援 · 增援盟友"
         }
       ],
       "branches": []
@@ -418,27 +407,27 @@
       "steps": [
         {
           "id": "legacy-honor",
-          "label": "盛典荣誉"
+          "label": "公会内部 · 盛典荣誉"
         },
         {
           "id": "legacy-idol-rank",
-          "label": "领队 IDOL 榜"
+          "label": "盛典 · 领队 IDOL 榜"
         },
         {
           "id": "legacy-idol-detail",
-          "label": "我的应援贡献"
+          "label": "盛典 · IDOL 应援详情"
         },
         {
           "id": "legacy-single-honor",
-          "label": "单推目标"
+          "label": "应援目标 · 单推"
         },
         {
           "id": "legacy-single-claimed",
-          "label": "领取荣誉"
+          "label": "荣誉 · 已收藏"
         },
         {
           "id": "legacy-honor-collection",
-          "label": "长期收藏"
+          "label": "公会内部 · 荣誉收藏"
         }
       ],
       "branches": [
@@ -453,19 +442,19 @@
       "steps": [
         {
           "id": "legacy-honor",
-          "label": "盛典荣誉"
+          "label": "公会内部 · 盛典荣誉"
         },
         {
           "id": "legacy-multi-honor",
-          "label": "多 IDOL 带队"
+          "label": "应援目标 · 群推"
         },
         {
           "id": "legacy-multi-claimed",
-          "label": "领取荣誉"
+          "label": "荣誉 · 已收藏"
         },
         {
           "id": "legacy-honor-collection",
-          "label": "长期收藏"
+          "label": "公会内部 · 荣誉收藏"
         }
       ],
       "branches": [
@@ -480,19 +469,19 @@
       "steps": [
         {
           "id": "legacy-idol-rank",
-          "label": "领队热度"
+          "label": "盛典 · 领队 IDOL 榜"
         },
         {
           "id": "legacy-idol-detail",
-          "label": "IDOL 详情"
+          "label": "盛典 · IDOL 应援详情"
         },
         {
           "id": "legacy-content-intent",
-          "label": "选剧情 / 服装"
+          "label": "IDOL · 专属内容偏好"
         },
         {
           "id": "legacy-content-recorded",
-          "label": "记录期待"
+          "label": "IDOL · 期待已记录"
         }
       ],
       "branches": [
@@ -506,31 +495,31 @@
       "steps": [
         {
           "id": "legacy-return1",
-          "label": "认识粉丝"
+          "label": "老玩家·概念 1/4"
         },
         {
           "id": "legacy-return2",
-          "label": "长期编队"
+          "label": "老玩家·概念 2/4"
         },
         {
           "id": "legacy-return3",
-          "label": "占点消耗"
+          "label": "老玩家·概念 3/4"
         },
         {
           "id": "legacy-return4",
-          "label": "团队回报"
+          "label": "老玩家·概念 4/4"
         },
         {
           "id": "legacy-return-gift",
-          "label": "体验礼"
+          "label": "老玩家·赠礼"
         },
         {
           "id": "legacy-return-training",
-          "label": "自选模拟"
+          "label": "老玩家·自选模拟"
         },
         {
           "id": "legacy-return-finish",
-          "label": "回归完成"
+          "label": "老玩家·体验完成"
         }
       ],
       "branches": []
@@ -554,11 +543,331 @@
         }
       ],
       "branches": []
+    },
+    {
+      "id": "rankings",
+      "module": "F",
+      "title": "排名与奖励预览",
+      "steps": [
+        {
+          "id": "f-daily-rank",
+          "label": "每日排名"
+        },
+        {
+          "id": "f-personal-rank",
+          "label": "赛季排名 · 个人"
+        },
+        {
+          "id": "f-guild-rank",
+          "label": "赛季排名 · 公会"
+        }
+      ],
+      "branches": [
+        "f-daily-reward",
+        "f-personal-reward",
+        "f-guild-reward"
+      ]
+    },
+    {
+      "id": "points",
+      "module": "F",
+      "title": "公会积分仪表盘",
+      "steps": [
+        {
+          "id": "map",
+          "label": "地图 · 选择领地"
+        },
+        {
+          "id": "points",
+          "label": "公会积分 · 实时详情"
+        },
+        {
+          "id": "points-guild",
+          "label": "公会积分 · 组成明细"
+        },
+        {
+          "id": "points",
+          "label": "公会积分 · 实时详情"
+        }
+      ],
+      "branches": [
+        "points-history",
+        "points-replay",
+        "points-replay-event",
+        "points-replay-rival"
+      ]
     }
   ],
-  "stateCount": 90,
-  "revision": "single-primary-v4",
-  "scope": "A-D frozen; E-G simplified continuous flows; H retained proposals",
+  "stateCount": 100,
+  "revision": "V3 · 2026-09-28",
+  "scope": "V3 source synchronized 2026-09-28; six-day season",
+  "sourceMap": {
+    "home": {
+      "nodeId": "226:220",
+      "asset": "assets/v3-A-home.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-220"
+    },
+    "support": {
+      "nodeId": "368:13",
+      "asset": "assets/v3-A-support.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-13"
+    },
+    "teams": {
+      "nodeId": "226:982",
+      "asset": "assets/v3-B-team.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-982"
+    },
+    "team-edit": {
+      "nodeId": "226:1113",
+      "asset": "assets/v3-B-edit.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1113"
+    },
+    "team-fans": {
+      "nodeId": "226:1217",
+      "asset": "assets/v3-B-busy.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1217"
+    },
+    "war-teams": {
+      "nodeId": "226:1518",
+      "asset": "assets/v3-B-list.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1518"
+    },
+    "map": {
+      "nodeId": "226:1907",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1907"
+    },
+    "territory": {
+      "nodeId": "226:2035",
+      "asset": "assets/v3-C-target.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2035"
+    },
+    "battle": {
+      "nodeId": "226:2304",
+      "asset": "assets/v3-C-battle.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2304"
+    },
+    "battle-event": {
+      "nodeId": "226:2474",
+      "asset": "assets/v3-C-event.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2474"
+    },
+    "battle-rival": {
+      "nodeId": "226:2566",
+      "asset": "assets/v3-C-rival.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2566"
+    },
+    "win": {
+      "nodeId": "226:2660",
+      "asset": "assets/v3-C-win.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2660"
+    },
+    "lose": {
+      "nodeId": "226:2662",
+      "asset": "assets/v3-C-lose.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2662"
+    },
+    "battle-report": {
+      "nodeId": "226:7517",
+      "asset": "assets/v3-C-report.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-7517"
+    },
+    "map-low": {
+      "nodeId": "226:6",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-6"
+    },
+    "aid-edit": {
+      "nodeId": "226:3415",
+      "asset": "assets/v3-D-request.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3415"
+    },
+    "aid": {
+      "nodeId": "226:3084",
+      "asset": "assets/v3-D-list.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3084"
+    },
+    "aid-received": {
+      "nodeId": "226:3147",
+      "asset": "assets/v3-D-received.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3147"
+    },
+    "guard": {
+      "nodeId": "226:6942",
+      "asset": "assets/v3-D-guard.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-6942"
+    },
+    "allies": {
+      "nodeId": "226:3302",
+      "asset": "assets/v3-D-allies.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3302"
+    },
+    "e-map": {
+      "nodeId": "230:8",
+      "asset": "assets/v3-E-intro.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=230-8"
+    },
+    "e-win": {
+      "nodeId": "279:551",
+      "asset": "assets/v3-E-win.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=279-551"
+    },
+    "e-lose": {
+      "nodeId": "279:553",
+      "asset": "assets/v3-E-lose.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=279-553"
+    },
+    "f-result": {
+      "nodeId": "288:647",
+      "asset": "assets/v3-F-report.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=288-647"
+    },
+    "g-s0": {
+      "nodeId": "226:220",
+      "asset": "assets/v3-A-home.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-220"
+    },
+    "g-recruit": {
+      "nodeId": "368:13",
+      "asset": "assets/v3-A-support.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-13"
+    },
+    "g-team": {
+      "nodeId": "226:982",
+      "asset": "assets/v3-B-team.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-982"
+    },
+    "g-map": {
+      "nodeId": "226:1907",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1907"
+    },
+    "g-target": {
+      "nodeId": "226:2035",
+      "asset": "assets/v3-C-target.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2035"
+    },
+    "g-aid": {
+      "nodeId": "226:3415",
+      "asset": "assets/v3-D-request.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3415"
+    },
+    "g-aid-wait": {
+      "nodeId": "226:3084",
+      "asset": "assets/v3-D-list.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3084"
+    },
+    "g-aid-done": {
+      "nodeId": "226:3147",
+      "asset": "assets/v3-D-received.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3147"
+    },
+    "g-reinforce": {
+      "nodeId": "226:3302",
+      "asset": "assets/v3-D-allies.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-3302"
+    },
+    "legacy-idol-detail": {
+      "nodeId": "385:2",
+      "asset": "assets/v3-H-idol.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=385-2"
+    },
+    "a-boost": {
+      "nodeId": "368:30",
+      "asset": "assets/v3-A-boost.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-30"
+    },
+    "a-rules": {
+      "nodeId": "368:35",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-35"
+    },
+    "a-flyer-tip": {
+      "nodeId": "368:41",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-41"
+    },
+    "a-stick-tip": {
+      "nodeId": "368:51",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=368-51"
+    },
+    "f-daily-rank": {
+      "nodeId": "286:631",
+      "asset": "assets/v3-F-daily-rank.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=286-631"
+    },
+    "f-personal-rank": {
+      "nodeId": "286:634",
+      "asset": "assets/v3-F-personal-rank.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=286-634"
+    },
+    "f-guild-rank": {
+      "nodeId": "288:642",
+      "asset": "assets/v3-F-guild-rank.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=288-642"
+    },
+    "f-daily-reward": {
+      "nodeId": "288:644",
+      "asset": "assets/v3-F-daily-reward.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=288-644"
+    },
+    "f-personal-reward": {
+      "nodeId": "288:645",
+      "asset": "assets/v3-F-personal-reward.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=288-645"
+    },
+    "f-guild-reward": {
+      "nodeId": "288:646",
+      "asset": "assets/v3-F-guild-reward.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=288-646"
+    },
+    "f-report-details": {
+      "nodeId": "301:649",
+      "asset": "assets/v3-F-report-details.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=301-649"
+    },
+    "points": {
+      "nodeId": "439:13",
+      "asset": "assets/v3-F-points.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=439-13"
+    },
+    "points-guild": {
+      "nodeId": "439:13",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=439-13"
+    },
+    "points-history": {
+      "nodeId": "439:13",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=439-13"
+    },
+    "points-replay": {
+      "nodeId": "226:2304",
+      "asset": "assets/v3-C-battle.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2304"
+    },
+    "points-replay-event": {
+      "nodeId": "226:2474",
+      "asset": "assets/v3-C-event.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2474"
+    },
+    "points-replay-rival": {
+      "nodeId": "226:2566",
+      "asset": "assets/v3-C-rival.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-2566"
+    },
+    "g-real-team": {
+      "nodeId": "226:982",
+      "asset": "assets/v3-B-team.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-982"
+    },
+    "g-held": {
+      "nodeId": "226:1907",
+      "asset": "assets/v3-C-map.webp",
+      "url": "https://www.figma.com/design/3UrD3ReEc65mSIGWeAatof/IDOL?node-id=226-1907"
+    }
+  },
   "aliases": {
     "e-stage": "e-map",
     "e-select": "e-map",
@@ -576,6 +885,16 @@
     "f-rest": "home",
     "g-sim-ready": "g-sim",
     "g-real": "g-map",
-    "g-complete": "guard"
+    "g-complete": "guard",
+    "support-detail": "support",
+    "recruit-live": "support",
+    "recruit-speed": "a-boost",
+    "recruit-reward": "support",
+    "a-ad": "support",
+    "war-entry": "map",
+    "war-roster": "map",
+    "empty": "territory",
+    "g-live": "g-recruit",
+    "g-claim": "g-recruit"
   }
 }
