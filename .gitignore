@@ -1,4 +1,21 @@
 .DS_Store
+
+node_modules/
+dist/
+
+# build output
+out/
+
+# temporary files
+.tmp/
+.codex_tmp/
+tmp/
+
+# figma sync cache
+figma-v3-sync/
+
+# archives
+*.tar.gz.DS_Store
 node_modules/
 dist/
 *.tar.gz
