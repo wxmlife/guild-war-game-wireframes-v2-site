@@ -18,7 +18,7 @@ const note=t=>`<p class="phone-note">${t}</p>`;
 const banner=(a,b)=>`<div class="callout"><b>${a}</b><span>${b}</span></div>`;
 const metric=(a,b)=>`<div class="metric"><small>${a}</small><strong>${b}</strong></div>`;
 const b=(label,to,action,kind='gold')=>({label,to,action,kind});
-raw('home','A','MCN 主城',img('A',0),[hit(225,235,150,175,'support','进入应援中心'),hit(225,205,150,60,'teams','进入编队'),hit(280,560,115,180,'war-entry','进入 Battle')],'Figma 已确定的 MCN 主城原画；按钮热区与原稿入口对应。');
+raw('home','A','MCN 主城',img('A',0),[hit(225,235,150,175,'support','进入应援中心'),hit(280,560,115,180,'war-entry','进入 Battle')],'主城仅保留应援中心和公会战入口；编队从公会战地图的目标操作进入。');
 raw('support','A','应援中心',img('A',1),[hit(116,194,224,126,'support-detail','查看应援站'),hit(94,704,216,57,'recruit-live','开始招募'),hit(258,326,86,41,'recruit-live','招募粉丝'),hit(183,768,40,41,'home','关闭')]);
 raw('support-detail','A','应援中心 · 招募方式',img('A',2),[hit(96,704,210,60,'recruit-live','招募粉丝'),hit(183,768,40,41,'support','关闭')]);
 raw('recruit-live','A','招募进行中',img('A',3),[hit(125,623,160,57,'recruit-speed','加速招募'),hit(184,710,40,50,'support','返回')]);

@@ -1,7 +1,7 @@
 (function(){
 const D=window.IDOLData,S=D.screens,h=(x,y,w,h,to,label,action)=>({x,y,w,h,to,label,action});
-S.home.hits=[h(294,554,81,52,'support','Fans · 应援中心'),h(296,470,81,64,'teams','Team Setting · 编队'),h(154,476,130,36,'war-entry','Crew Clash · 进入 Battle')];
-S.home.note='沿用已确定的 MCN 主城原画。Fans 与 Team Setting 对应原稿入口；Crew Clash 的可见招牌接入 Battle。';
+S.home.hits=[h(294,554,81,52,'support','Fans · 应援中心'),h(154,476,130,36,'war-entry','Crew Clash · 进入 Battle')];
+S.home.note='沿用已确定的 MCN 主城原画。编队不在主城操作；从公会战地图点击目标的占领或挑战流程进入编队。';
 S.support.hits=[h(254,368,99,38,'recruit-live','体力 −1 · 招募'),h(111,776,174,48,'teams','前往编队'),h(181,852,34,32,'home','关闭'),h(254,432,99,38,'a-ad','广告 0/2')];
 S['support-detail'].title='应援中心 · 招募等待';S['support-detail'].hits=[h(254,368,99,38,'recruit-speed','加速当前招募'),h(257,212,102,41,'recruit-speed','加速'),h(111,776,174,48,'teams','前往编队'),h(181,852,34,32,'home','关闭')];
 S['recruit-live'].hits=[h(112,598,178,49,'recruit-speed','加速完成'),h(184,694,34,32,'support-detail','关闭 · 招募继续')];

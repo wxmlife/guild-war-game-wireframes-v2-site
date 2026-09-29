@@ -18,7 +18,7 @@ D.modules.find(m=>m.id==='D').summary='按本次新稿：驻守底部召回，�
 D.modules.find(m=>m.id==='E').summary='第6天盛典舞台开启，直接 Battle；三倍积分突出展示。';
 D.modules.find(m=>m.id==='F').title='积分 · 排名与赛季奖励';
 D.modules.find(m=>m.id==='F').summary='积分详情、每日与赛季排名、奖励预览、赛季最终报告与领取。';
-screen('home','A','MCN 主城','A-home',[H(293,550,85,59,'support','Fans · 粉丝招募中心'),H(294,462,85,72,'teams','Team Setting · 编队'),H(156,475,127,42,'map','Crew Clash · 进入地图')],{figmaNode:'226:220'});
+screen('home','A','MCN 主城','A-home',[H(293,550,85,59,'support','Fans · 粉丝招募中心'),H(156,475,127,42,'map','Crew Clash · 进入地图')],{figmaNode:'226:220',note:'主城不提供编队入口；从公会战地图点击目标的占领或挑战流程进入编队。'});
 const inRecruit=(x,y,w,h,to,label,action)=>H(8+x*386/425,125+y*619/681,w*386/425,h*619/681,to,label,action);
 screen('support','A','Fans Club · 粉丝池','A-support',[
  inRecruit(103,563,222,42,'map','前往出战','leaveRecruit'),inRecruit(261,217,89,36,'a-boost','自然增长加速'),inRecruit(373,67,25,28,'a-rules','查看恢复说明'),
